@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/MSukri-pp.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>M Sukri</title>
+  </head>
+  <body>
+    <audio loop id="audio">
+      <source src="assets/audio/backsound.mp3" type="Audio/mp3" />
+    </audio>
+    <!-- HEADER START -->
+    <header class="header">
+      <a href="#" class="logo" id="logo"><i class="bx bxs-user"></i></a>
+      <nav class="navbar">
+        <a class="active">Home</a>
+        <a href="content.html#about">About</a>
+        <a href="content.html#skill">Sklils</a>
+        <a href="content.html#project">Project</a>
+        <a href="content.html#other">Other</a>
+        <a href="content.html#contact">Contact</a>
+      </nav>
+      <div class="darkMode">
+        <i class="bx bxs-sun"></i>
+        <i class="bx bxs-moon"></i>
+      </div>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- IMAGE & HOME CONTENT -->
+    <div class="card-image">
+      <img
+        src="assets/img/MSukri-pp.jpg"
+        alt="profil-picture"
+        class="card-img Msukri"
+      />
+    </div>
+    <section class="home">
+      <div class="home-content">
+        <h1>M Sukri</h1>
+        <h3>Keep Learning</h3>
+        <p>
+          I am a person who is always motivated to try new things.
+          <br />
+          🌐<span>THE FUTURE IS TECHNOLOGY </span>🖥
+        </p>
+
+        <!-- BUTTON CUSTOM -->
+        <div class="btn-box">
+          <a href="#">Download CV</a>
+          <a id="btn" onclick="trigger()">🎶</a>
+        </div>
+      </div>
+
+      <!-- BUTTON BOX ICON -->
+      <div class="home-sci">
+        <a href="https://instagram.com/m_sukri03" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="mailto:dummy@gmail.com" target="_blank"
+          ><i class="bx bxl-gmail"></i
+        ></a>
+        <a href="#" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/darkmode.js"></script>
+  <script src="assets/js/script.js"></script>
+</html>
