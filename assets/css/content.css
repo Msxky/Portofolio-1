@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
 }
 
 :root {
@@ -200,10 +201,16 @@ body::-webkit-scrollbar {
 
 .contentSkill {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 5%;
   /* background: green; */
   height: 60vh;
+  padding: 2em;
+}
+
+.contentSkill-left::-webkit-scrollbar, .contentSkill-mid::-webkit-scrollbar, .contentSkill-right::-webkit-scrollbar {
+  display: none;
 }
 
 .contentSkill-left, .contentSkill-mid, .contentSkill-right {
@@ -214,6 +221,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 0 10px 0 var(--warna-utama) inset;
   border-radius: 20px;
   padding: 2em;
+  overflow: scroll;
   text-align: center;
 }
 
@@ -449,5 +457,10 @@ footer {
     width: 100%;
     height: 250px;
     object-fit: cover;
+  }
+
+  .containerContact .contentContact .input form {
+    flex-direction: column;
+    gap: 0;
   }
 }
