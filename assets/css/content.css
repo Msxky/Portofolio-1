@@ -126,6 +126,7 @@ body::-webkit-scrollbar {
 .containerAbout, .containerSkill, .containerProject, .containerOther, .containerContact {
   /* background: blue; */
   height: auto;
+  width:100%;
   padding-top: 15vh;
 }
 
