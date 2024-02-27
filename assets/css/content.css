@@ -126,6 +126,7 @@ body::-webkit-scrollbar {
 .containerAbout, .containerSkill, .containerProject, .containerOther, .containerContact {
   /* background: blue; */
   height: auto;
+  width:100%;
   padding-top: 15vh;
 }
 
@@ -540,6 +541,7 @@ span {
     flex-direction: column;
     gap: 0;
   }
+<<<<<<< HEAD
 
   .contentFooter {
     flex-direction: column;
@@ -563,3 +565,6 @@ span {
     z-index: 100;
   }
 }
+=======
+}
+>>>>>>> 28343582d80c4fb5840ed9d0acb187194fde5dae
