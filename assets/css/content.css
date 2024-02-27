@@ -423,6 +423,7 @@ footer {
   color: var(--warna-secondary);
   border-top: 2px solid var(--warna-utama);
   box-shadow: 2px 0 100px 0 var(--warna-utama);
+  z-index: -100;
 }
 
 .contentFooter {
