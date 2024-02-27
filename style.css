@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   user-select: none;
+  cursor: none;
 }
 
 :root {
@@ -31,6 +32,40 @@ body {
   /* background-attachment: fixed; */
   background-position: center;
   color: var(--warna-secondary);
+}
+
+.cursor, .cursor2, .cursor3 {
+  width: 5px;
+  height: 5px;
+  pointer-events: none;
+  background: red;
+  border-radius: 50%;
+  z-index: 9999;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: none;
+}
+
+.cursor2, .cursor3 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--warna-utama);
+  box-shadow: 0 2px 5px 0 var(--warna-utama), 0 0 250px 0 var(--warna-utama), 0 0 50px, 0 0 100px var(--warna-utama), 0 0 10px var(--warna-utama);
+  background: transparent;
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .header {
@@ -72,7 +107,7 @@ body {
   color: var(--text-color);
   display: flex;
   justify-content: flex-end;
-  cursor: pointer;
+  /* cursor: pointer; */
   z-index: 10001;
   transition: all .3s ease;
 }
@@ -206,7 +241,7 @@ p span {
 }
 
 .btn-box a:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   color: var(--warna-secondary);
   scale: 1.1;
   transition: .3s ease-in-out;
