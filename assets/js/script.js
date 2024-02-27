@@ -1,11 +1,11 @@
 // // BTN-MENU
- let menuIcon = document.querySelector("#menu-icon");
- let navbar = document.querySelector(".navbar");
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
 
- menuIcon.onclick = () => {
- menuIcon.classList.toggle("bx-x");
- navbar.classList.toggle("active");
- };
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+};
 
 // // HAPUS ICON MENU SETELAH DI KLIK
 // menuIcon.classList.remove("bx-x");

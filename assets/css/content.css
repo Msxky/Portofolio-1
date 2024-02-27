@@ -137,13 +137,20 @@ body::-webkit-scrollbar {
   top: 100px;
 }
 
+/* END TITLE HEADING */
+
+/* PADDING CONTENT (kecuali 'contentProject) */
+.contentAbout, .contentSkill, .contentOther, .contentContact, .contentFooter {
+  padding: 5% 10%;
+}
+
 .contentAbout {
   display: flex;
   justify-content: center;
   gap: 4rem;
   align-items: center;
   /* background: pink; */
-  height: 70vh;
+  /* height: 70vh; */
 }
 
 .contentAbout1 img {
@@ -167,7 +174,7 @@ body::-webkit-scrollbar {
 }
 
 /* STYLING BUTTON */
-.contentAbout2 button, .containerSkill .btn button {
+.contentAbout2 button, .containerSkill .btn button, #btn {
   border: 2px solid var(--warna-utama);
   color: var(--warna-secondary);
   box-shadow:
@@ -177,15 +184,16 @@ body::-webkit-scrollbar {
   font-weight: 600;
   background: transparent;
   padding: .5em 2em;
-  cursor: pointer;
   transition: .2s all ease-in-out;
+  z-index: -100;
 }
 
-.contentAbout2 button:hover, .containerSkill .btn button:hover {
+.contentAbout2 button:hover, .containerSkill .btn button:hover, #btn {
   color: var(--warna-text);
   background: var(--warna-utama);
   scale: 1.1;
   border-radius: 5px;
+  cursor: pointer;
   transition: .2s all ease-in-out;
   -webkit-transition: .2s all ease-in-out;
   -moz-transition: .2s all ease-in-out;
@@ -205,8 +213,7 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 5%;
   /* background: green; */
-  height: 60vh;
-  padding: 2em;
+  /* height: 100dvh; */
 }
 
 .contentSkill-left::-webkit-scrollbar, .contentSkill-mid::-webkit-scrollbar, .contentSkill-right::-webkit-scrollbar {
@@ -220,7 +227,7 @@ body::-webkit-scrollbar {
   border: 2px solid var(--warna-utama);
   box-shadow: 0 0 10px 0 var(--warna-utama) inset;
   border-radius: 20px;
-  padding: 2em;
+  padding: 2em .5rem;
   overflow: scroll;
   text-align: center;
 }
@@ -233,6 +240,8 @@ body::-webkit-scrollbar {
   margin-top: 1em;
 }
 
+
+/* PROJECT */
 .contentProject {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -240,12 +249,11 @@ body::-webkit-scrollbar {
   gap: 15px;
   /* background: greenyellow; */
   height: auto;
-  padding: 4rem;
+  padding: 5% 5%;
 }
 
 .contentProject .contentP {
-  width: 250px;
-  height: 250px;
+  aspect-ratio: 16/9;
   background: var(--warna-utama);
   border-radius: 20px;
   overflow: hidden;
@@ -272,7 +280,7 @@ body::-webkit-scrollbar {
   height: 200px;
   bottom: 0;
   left: 0;
-  padding: 3em 4px 0 4px;
+  padding: 3em 4px 1em 4px;
   position: absolute;
   color: var(--warna-text);
   background: linear-gradient(rgba(0, 0, 0, 0.01), var(--warna-secondary));
@@ -322,12 +330,32 @@ body::-webkit-scrollbar {
 }
 
 .contentProject .contentP .contentImg .link a i, .contentProject .contentP .contentImg a i {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: .5em;
   padding: 0 .5em;
   color: var(--warna-text);
 }
 
+/* OTHER */
+.containerOther {
+  background: red;
+  /* height: 100dvh; */
+}
+
+.contentOther {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contentOther1, .contentOther2 {
+  width: 100%;
+  height: 50dvh;
+  background: green;
+}
+
+/* CONTACT */
 .contentContact {
   display: flex;
   justify-content: center;
@@ -338,9 +366,8 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 5%;
   align-items: center;
-  background: var(--warna-utama);
+  /* background: var(--warna-utama); */
   justify-content: center;
 }
 
@@ -351,21 +378,57 @@ body::-webkit-scrollbar {
   gap: 15px;
 }
 
+
 .contentContact .input input, textarea {
-  border: transparent;
+  border: 2px solid var(--warna-utama);
   width: 100%;
   padding: .5em 2em;
   margin-bottom: 1em;
   resize: none;
+  color: var(--warna-secondary);
+  background: var(--warna-text);
+  font-weight: 600;
 }
 
+
 #btn {
-  width: 20%;
+  width: 9rem;
   padding: .5em 1em;
 }
 
 footer {
   height: 20vh;
+  background: var(--warna-text);
+  color: var(--warna-secondary);
+  border-top: 2px solid var(--warna-utama);
+  box-shadow: 2px 0 100px 0 var(--warna-utama);
+}
+
+.contentFooter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentFooter p {
+  font-size: 10px;
+}
+
+.portoLink {
+  margin-left: 7.5rem;
+  font-size: 30px;
+}
+
+.portoLink i:hover {
+  scale: 1.2;
+  text-shadow: 0 0 50px var(--warna-utama);
+  color: var(--warna-utama);
+}
+
+span {
+  color: var(--warna-utama);
 }
 
 /* RESPONSIVE WEB  */
@@ -409,6 +472,10 @@ footer {
     top: 100%;
   }
 
+  .containerAbout, .containerSkill, .containerProject, .containerOther, .containerContact {
+    padding-top: 14vh;
+  }
+
   .contentAbout1 {
     text-align: center;
   }
@@ -419,13 +486,13 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0;
+    padding: 0 0;
   }
 
   .contentAbout .contentAbout1, .contentAbout .contentAbout2 {
     width: 100%;
     padding: 2em;
   }
-
 
   .contentAbout1 img {
     width: 200px;
@@ -436,6 +503,7 @@ footer {
     flex-direction: column;
     height: auto;
     gap: 20px;
+    padding: 0 0;
   }
 
   .contentSkill-left, .contentSkill-mid, .contentSkill-right {
@@ -459,8 +527,39 @@ footer {
     object-fit: cover;
   }
 
+  .contentOther {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contentContact .input {
+    padding: 0px;
+  }
+
   .containerContact .contentContact .input form {
     flex-direction: column;
     gap: 0;
+  }
+
+  .contentFooter {
+    flex-direction: column;
+  }
+
+  .portoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portoLink {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    gap: 1rem;
+    bottom: 0;
+    z-index: 100;
   }
 }
