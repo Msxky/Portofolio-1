@@ -1,4 +1,4 @@
-// // BTN-MENU
+// // MENU NAVBAR
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -7,12 +7,7 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-// // HAPUS ICON MENU SETELAH DI KLIK
-// menuIcon.classList.remove("bx-x");
-// navbar.classList.remove("active");
-
 // PLAY AUDIO BTN
-// var audio = new Audio("../audionya mine.mp3");
 const btn = document.getElementById("btn");
 const audio = document.getElementById("audio");
 
@@ -33,7 +28,7 @@ function trigger() {
   }
 }
 
-// cursor
+// CURSOR
 const cursor = document.querySelector(".cursor");
 const cursor2 = document.querySelector(".cursor2");
 const cursor3 = document.querySelector(".cursor3");
