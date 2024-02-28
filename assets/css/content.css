@@ -210,6 +210,69 @@ body::-webkit-scrollbar {
 
 /* STYLING BUTTON END */
 
+.containerAboutHidden {
+  display: none;
+  background: blue;
+}
+
+.containerAboutHidden .aboutHiddenImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerAboutHidden .aboutHiddenImg img {
+  width: 15rem;
+  box-shadow: 5px 5px 10px 0 var(--warna-utama);
+  border: 2px solid var(--warna-utama);
+  border-radius: 50%;
+  user-select: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.contentAboutHidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 2% 10%;
+}
+
+.contentAboutHidden1, .contentAboutHidden2 {
+  width: 1000px;
+  height: 350px;
+  /* background: green; */
+  border: 2px solid var(--warna-utama);
+  box-shadow: 5px 5px 10px 0 var(--warna-utama);
+  padding: 1rem 2rem;
+  overflow: scroll;
+}
+
+.contentAboutHidden1::-webkit-scrollbar, .contentAboutHidden2::-webkit-scrollbar {
+  display: none;
+}
+
+.contentAboutHidden ol, .contentAboutHidden ul {
+  margin-top: 8px;
+}
+
+.contentAboutHidden2 #magang {
+  margin-top: 16px;
+}
+
+.contentAboutHidden li {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 18px;
+}
+
+.contentAboutHidden .list li, .contentAboutHidden .list2 li {
+  padding: 2px;
+}
+
 .contentSkill {
   display: flex;
   justify-content: center;
@@ -353,12 +416,17 @@ body::-webkit-scrollbar {
 }
 
 .contentOther1, .contentOther2 {
-  width: 100%;
-  height: 50dvh;
+  width: 1000px;
+  height: 350px;
+  overflow: scroll;
   /* background: green; */
   border: 2px solid var(--warna-utama);
   box-shadow: 5px 5px 10px 0 var(--warna-utama);
   padding: 1rem 2rem;
+}
+
+.contentOther1::-webkit-scrollbar, .contentOther2::-webkit-scrollbar {
+  display: none;
 }
 
 .contentOther1 .list ul {
@@ -562,9 +630,26 @@ span::selection, span a::selection {
     object-fit: cover;
   }
 
-  .contentOther {
+  .containerAboutHidden .aboutHiddenImg img {
+    display: none;
+  }
+
+
+  /* contentOther and .contentAboutHidden */
+  .contentOther, .contentAboutHidden {
     width: 100%;
     flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .contentAboutHidden1, .contentAboutHidden2 {
+    width: 100%;
+    height: 450px;
+  }
+
+  .contentOther1, .contentOther2 {
+    width: 100%;
   }
 
   .contentOther1 .list ul {
