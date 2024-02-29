@@ -37,6 +37,8 @@ body {
 .cursor, .cursor2, .cursor3 {
   width: 5px;
   height: 5px;
+  top: -100%;
+  left: -100%;
   pointer-events: none;
   background: red;
   border-radius: 50%;

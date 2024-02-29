@@ -75,3 +75,18 @@ document.addEventListener("mousemove", (e) => {
   clearTimeout(timeout);
   timeout = setTimeout(mouseStop, 2000);
 });
+
+document.oncontextmenu = () => {
+  alert("Sorry, can't right click");
+  return false;
+};
+document.onkeydown = (e) => {
+  if (e.key == "F12") {
+    alert("Sorry, can't inspect element");
+    return false;
+  }
+  if (e.ctrlKey && e.key == "u") {
+    alert("Sorry, can't view page sources");
+    return false;
+  }
+};

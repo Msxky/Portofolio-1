@@ -46,9 +46,9 @@
           <div class="contentAbout2">
             <h3>Haii..</h3>
             <p>
-              I am a person who is always motivated to try new things, think
-              creatively and has a great interest in the world of digital
-              creativity and digital technology.
+              Saya adalah orang yang selalu termotivasi untuk mencoba hal-hal
+              baru, berpikir kreatif dan memiliki minat yang besar terhadap
+              dunia kreativ digital dan teknologi.
             </p>
             <button id="btnAbout" onclick="btnAbout()">See More</button>
           </div>
@@ -62,14 +62,16 @@
               <h3>Data Pribadi</h3>
               <div class="list">
                 <ol>
-                  <li>Nama</li>
-                  <li>Lightroom mobile</li>
-                  <li>Canva</li>
-                  <li>FL Studio mobile</li>
-                  <li>Festo Fluidsim</li>
-                  <li>CX-Programmer</li>
-                  <li>Visual Studio Code</li>
-                  <li>MS Office</li>
+                  <li>Nama : <span id="nama"></span></li>
+                  <li>Tempat/Tgl Lahir : <span id="ttl"></span></li>
+                  <li>Jenis Kelamin : <span id="jk"></span></li>
+                  <li>Agama : <span id="agama"></span></li>
+                  <li>Status : <span id="status"></span></li>
+                  <li>Tinggi Badan : <span id="tb"></span></li>
+                  <li>Berat Badan : <span id="bb"></span></li>
+                  <li>Alamat : <span id="alamat"></span></li>
+                  <li>Nomor Hp : <span id="hp"></span></li>
+                  <li>Email : <span id="email"></span></li>
                 </ol>
               </div>
             </div>
@@ -85,6 +87,15 @@
               <h3 id="magang">Magang</h3>
               <ul>
                 <li id="magangCaption"></li>
+              </ul>
+              <h3 id="dicoding">Dicoding Academy (bersertifikat)</h3>
+              <ul id="ulDicoding">
+                <li id="mdp"></li>
+                <li id="bdgc"></li>
+                <li id="bdmp"></li>
+                <li id="bdg"></li>
+                <li id="bdvd"></li>
+                <li id="plp"></li>
               </ul>
             </div>
           </div>
@@ -123,7 +134,7 @@
             <i class="bx bxs-wrench"></i>
             <h3>Enginering</h3>
             <p>
-              Memiliki pengalaman di bidang Electronika dan Otomasi Industri.
+              Memiliki pengalaman belajar di bidang Electronika dan Otomasi Industri.
             </p>
           </div>
         </div>
@@ -137,7 +148,7 @@
         <div class="contentProject">
           <!-- CONTENT 1 -->
           <div class="contentP">
-            <img src="assets/img/content/1.jpg" alt="" />
+            <img src="assets/img/content/1.png" alt="" />
             <div class="contentImg">
               <h3>Video Simulasi</h3>
               <p>
@@ -172,30 +183,73 @@
               <a
                 href="https://youtu.be/TnWITTnJg2Q?si=DkkVbwKh300-zxM2"
                 target="_blank"
-                title="Listen here"
+                title="Dengarkan Disini"
                 ><i class="bx bx-link-external"></i
               ></a>
             </div>
           </div>
           <!-- CONTENT 3 -->
-          <div class="contentP"></div>
+          <div class="contentP">
+            <img src="assets/img/content/3.png" alt="" />
+            <div class="contentImg">
+              <h3>Aplikasi Berbasis Web</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, architecto!
+              </p>
+              <div class="link">
+                <a
+                  href="https://des-my-money.vercel.app/"
+                  target="_blank"
+                  title="Aplikasi 1"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+                <a
+                  href="https://math-c.vercel.app/"
+                  target="_blank"
+                  title="Aplikasi 2"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
+            </div>
+          </div>
           <!-- CONTENT 4 -->
-          <div class="contentP"></div>
+          <div class="contentP">
+            <img src="assets/img/content/4.png" alt="" />
+            <div class="contentImg">
+              <h3>Arduino Uno</h3>
+              <p>Project sederhana implementasi sensor ultrasonik dan relay.</p>
+            </div>
+          </div>
           <!-- CONTENT 5 -->
-          <div class="contentP"></div>
+          <div class="contentP">
+            <img src="assets/img/content/5.png" alt="" />
+            <div class="contentImg">
+              <h3>Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, accusamus!
+              </p>
+              <div class="link">
+                <a
+                  href="https://tiktok-creator.vercel.app/"
+                  target="_blank"
+                  title="Website1"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+                <a
+                  href="https://multiwebx.vercel.app/"
+                  target="_blank"
+                  title="Website 2"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
+            </div>
+          </div>
           <!-- CONTENT 6 -->
           <div class="contentP"></div>
           <!-- CONTENT 7-->
           <div class="contentP"></div>
           <!-- CONTENT 8 -->
-          <div class="contentP">
-            <img src="assets/img/content/1.jpg" alt="" />
-            <div class="contentImg">
-              <h3>proj1</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
+          <div class="contentP"></div>
       </div>
       <!-- OTHER -->
       <div class="containerOther" id="other">
@@ -251,19 +305,25 @@
       <div class="containerContact" id="contact">
         <div class="title"><h1>- Contact -</h1></div>
         <div class="contentContact">
-          <div class="input">
+          <div class="input" id="form">
             <form action="">
-              <input type="text" placeholder="Enter your name" />
-              <input type="email" placeholder="Enter your email" />
+              <input id="yourName" type="text" placeholder="Your Name" />
+              <input id="yourMail" type="email" placeholder="Your Email" />
             </form>
             <textarea
               name="message"
-              id=""
-              placeholder="Enter Your message"
+              id="yourMessage"
+              placeholder="Message"
               cols="30"
               rows="10"
             ></textarea>
-            <input type="submit" id="btn" value="Send message" />
+            <input
+              class="sBtn"
+              type="submit"
+              onclick="send()"
+              id="btn"
+              value="Send message"
+            />
           </div>
         </div>
       </div>
@@ -274,18 +334,30 @@
             <h5>M Sukri</h5>
           </div>
           <div class="portoLink">
-            <i class="bx bxl-instagram-alt"></i>
-            <i class="bx bxl-instagram-alt"></i>
-            <i class="bx bxl-instagram-alt"></i>
+            <a href="https://www.instagram.com/m_sukri03"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+            <a href="https://www.instagram.com/m_sukri03"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+            <a href="https://www.instagram.com/m_sukri03"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
           </div>
           <p>
-            &copy; Copyright <span><a href="#">M Sukri Portofolio</a></span
-            >. All rights reserved
+            &copy; Copyright
+            <span><a href="#">M Sukri Portofolio.</a></span> All rights reserved
           </p>
         </div>
       </footer>
     </div>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script src="assets/js/darkmode.js"></script>
   <script src="assets/js/content.js"></script>
 </html>

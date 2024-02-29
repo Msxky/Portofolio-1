@@ -242,7 +242,7 @@ body::-webkit-scrollbar {
 
 .contentAboutHidden1, .contentAboutHidden2 {
   width: 1000px;
-  height: 350px;
+  height: 400px;
   /* background: green; */
   border: 2px solid var(--warna-utama);
   box-shadow: 5px 5px 10px 0 var(--warna-utama);
@@ -258,14 +258,23 @@ body::-webkit-scrollbar {
   margin-top: 8px;
 }
 
-.contentAboutHidden2 #magang {
+.contentAboutHidden2 #magang, .contentAboutHidden2 #dicoding {
   margin-top: 16px;
+}
+
+.contentAboutHidden2 #ulDicoding li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .contentAboutHidden li {
   font-size: 15px;
   font-weight: 500;
   margin-left: 18px;
+}
+
+.contentAboutHidden li span {
+  font-weight: 600;
 }
 
 .contentAboutHidden .list li, .contentAboutHidden .list2 li {
@@ -321,6 +330,7 @@ body::-webkit-scrollbar {
   aspect-ratio: 16/9;
   background: var(--warna-utama);
   border-radius: 20px;
+  border: 2px solid var(--warna-utama);
   overflow: hidden;
   position: relative;
   -webkit-border-radius: 20px;
@@ -364,6 +374,7 @@ body::-webkit-scrollbar {
 .contentProject .contentP .contentImg:hover {
   height: 100%;
   opacity: 1;
+  backdrop-filter: blur(2px);
   transition: .2s all ease-in-out;
   -webkit-transition: .2s all ease-in-out;
   -moz-transition: .2s all ease-in-out;
@@ -505,6 +516,7 @@ body::-webkit-scrollbar {
 }
 
 footer {
+  margin-top: 12vh;
   height: 20vh;
   background: var(--warna-text);
   color: var(--warna-secondary);
@@ -531,7 +543,11 @@ footer {
   user-select: none;
 }
 
-.portoLink i:hover {
+.portoLink a {
+  color: var(--warna-secondary);
+}
+
+.portoLink a i:hover {
   scale: 1.2;
   cursor: pointer;
   text-shadow: 0 0 50px var(--warna-utama);
@@ -665,7 +681,7 @@ span::selection, span a::selection {
 
   .contentAboutHidden1, .contentAboutHidden2 {
     width: 100%;
-    height: 450px;
+    height: 500px;
   }
 
   .contentOther1, .contentOther2 {
