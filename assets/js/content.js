@@ -19,7 +19,7 @@ function btnAbout() {
     btnAbout.style.borderRadius = "5px";
     btnAbout.textContent = "Scroll Down⬇";
   } else {
-    alert("Secret Key Invalid, try again!");
+    alert("Secret Key Invalid, please try again!");
   }
 }
 
@@ -53,8 +53,12 @@ document.getElementById("smp").textContent =
   "SMP N 1 Kec. Payakumbuh (2016 - 2019)";
 document.getElementById("smk").textContent =
   "SMK N 2 Payakumbuh, Otomasi insdustri Program Jurusan 4 Tahun (2019 - 2023)";
-document.getElementById("magangCaption").textContent =
-  "Magang di PT Semen Padang Bagian otomasi program leader PLC (Programmable Logic Controller) dan sistem kelistrikan dasar serta maintenance selama (6 Bulan) bersertifikat.";
+
+const magang = document.getElementById("magangCaption");
+const sertifikatMagang = "https://drive.google.com/file/d/11WlVQSh5wR1YUnIVS_1WrotQUQnJR2pz/view?usp=drivesdk";
+const mouseover = `onmouseover="this.style.textDecoration= 'underline'"`
+const mouseout = `onmouseout="this.style.textDecoration= 'none'"`
+magang.innerHTML = `Magang di PT Semen Padang Bagian otomasi program leader PLC (Programmable Logic Controller) dan sistem kelistrikan dasar serta maintenance selama (6 Bulan) <a href="${sertifikatMagang}" id="sertifikatMagang" target="_blank" style="color:var(--warna-secondary);  text-decoration: none;" ${mouseover} ${mouseout} title="Sertifikat Magang di PT Semen Padang">bersertifikat</a>.`;
 
 const mdp1 = document.getElementById("mdp");
 const bdgc2 = document.getElementById("bdgc");
@@ -64,7 +68,8 @@ const bdvd5 = document.getElementById("bdvd");
 const plp6 = document.getElementById("plp");
 
 // mdp
-mdp1.textContent = "Memulai Dasar Pemograman untuk Menjadi Pengembang Software";
+mdp1.textContent =
+  "Memulai Dasar Pemograman untuk Menjadi Pengembang Software (2023)";
 function mdp() {
   window.open(
     "https://drive.google.com/file/d/19pO_eRB6jY1KsZTImV54nVRfwDCRuLdU/view?usp=drives",
@@ -74,7 +79,7 @@ function mdp() {
 mdp1.onclick = mdp;
 
 // bdgc
-bdgc2.textContent = "Belajar Dasar Google Cloud";
+bdgc2.textContent = "Belajar Dasar Google Cloud (2023)";
 function bdgc() {
   window.open(
     "https://drive.google.com/file/d/1A5omsnamCgpe0vmMcQitP0kez20lIm32/view?usp=drivesdk",
@@ -84,7 +89,7 @@ function bdgc() {
 bdgc2.onclick = bdgc;
 
 // bdmp
-bdmp3.textContent = "Belajar Dasar Managemen Proyek";
+bdmp3.textContent = "Belajar Dasar Managemen Proyek (2023)";
 function bdmp() {
   window.open(
     "https://drive.google.com/file/d/1ADFRu6oLlTfEGALwhKafVjtG3lmWfw4U/view?usp=drivesdk",
@@ -94,7 +99,7 @@ function bdmp() {
 bdmp3.onclick = bdmp;
 
 // bdg
-bdg4.textContent = "Belajar Dasar Git dengan Github";
+bdg4.textContent = "Belajar Dasar Git dengan Github (2023)";
 function bdg() {
   window.open(
     "https://drive.google.com/file/d/19xVlY7WHIb-4765opBTaRj690TBizjLx/view?usp=drivesdk",
@@ -104,7 +109,7 @@ function bdg() {
 bdg4.onclick = bdg;
 
 // bdg
-bdvd5.textContent = "Belajar Dasar Visualisasi Data";
+bdvd5.textContent = "Belajar Dasar Visualisasi Data (2023)";
 function bdvd() {
   window.open(
     "https://drive.google.com/file/d/19kNcMV0s7OXmfoVOTDK8w0VpolWBobVF/view?usp=drivesdk",
@@ -114,7 +119,8 @@ function bdvd() {
 bdvd5.onclick = bdvd;
 
 // plp
-plp6.textContent = "Pengenalan ke Logika Pemograman (Programming Logic 101)";
+plp6.textContent =
+  "Pengenalan ke Logika Pemograman (Programming Logic 101) (2023)";
 function plp() {
   window.open(
     "https://drive.google.com/file/d/19wbqcZhiHZkvaJzU4xNZJeOb5W6_fTlC/view?usp=drivesdk",
