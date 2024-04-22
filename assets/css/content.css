@@ -519,10 +519,10 @@ body::-webkit-scrollbar {
 footer {
   margin-top: 12vh;
   height: 20vh;
-  background: var(--warna-text);
-  color: var(--warna-secondary);
+  color: var(--warna-text);
+  background: var(--warna-secondary);
   border-top: 2px solid var(--warna-utama);
-  box-shadow: 0 -10px 10px 0 var(--warna-utama);
+  /* box-shadow: 0 -10px 10px 0 var(--warna-utama); */
   z-index: -100;
 }
 
@@ -545,7 +545,7 @@ footer {
 }
 
 .portoLink a {
-  color: var(--warna-secondary);
+  color: var(--warna-text);
 }
 
 .portoLink a i:hover {
@@ -556,7 +556,7 @@ footer {
 }
 
 span, span a {
-  color: var(--warna-utama);
+  color: #2596be;
   text-decoration: none;
 }
 

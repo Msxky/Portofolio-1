@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 function btnAbout() {
   const containerAboutHidden = document.querySelector(".containerAboutHidden");
   const btnAbout = document.getElementById("btnAbout");
-  const promptInput = prompt("Secret Key!");
+  const promptInput = prompt("Enter Secret Key!");
   const key = "#eaeaea1";
 
   if (promptInput == key) {
