@@ -355,7 +355,7 @@ body::-webkit-scrollbar {
   height: 200px;
   bottom: 0;
   left: 0;
-  padding: 3em 4px 1em 4px;
+  padding: 3em 18px 1em 18px;
   position: absolute;
   color: var(--warna-text);
   background: linear-gradient(rgba(0, 0, 0, 0.01), var(--warna-secondary));
@@ -486,6 +486,7 @@ body::-webkit-scrollbar {
   resize: none;
   color: var(--warna-secondary);
   background: var(--warna-text);
+  box-shadow: 5px 5px 10px 0 var(--warna-utama);
   font-weight: 600;
 }
 
