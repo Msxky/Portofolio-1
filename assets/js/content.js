@@ -9,10 +9,11 @@ menuIcon.onclick = () => {
 function btnAbout() {
   const containerAboutHidden = document.querySelector(".containerAboutHidden");
   const btnAbout = document.getElementById("btnAbout");
-  const promptInput = prompt("Enter Secret Key!");
-  const key = "#eaeaea1";
+  const promptInput = prompt("Personal Data⚠, Please Enter Secret Key!");
+  const key = "";
 
   if (promptInput == key) {
+    alert("Success✅, Scroll Down⬇")
     containerAboutHidden.style.display = "block";
     btnAbout.style.color = "var(--warna-text)";
     btnAbout.style.background = "var(--warna-utama)";
@@ -30,8 +31,7 @@ document.getElementById("agama").textContent = "Islam";
 document.getElementById("status").textContent = "Belum Kawin";
 document.getElementById("tb").textContent = "176 CM";
 document.getElementById("bb").textContent = "56 KG";
-document.getElementById("alamat").textContent =
-  "Koto Baru Simalanggang, Kecamatan Payakumbuh, Kabupaten Lima Puluh Kota, Sumatra Barat.";
+document.getElementById("alamat").textContent = "Kecamatan Payakumbuh, Kabupaten Lima Puluh Kota, Sumatra Barat.";
 const hp = document.getElementById("hp");
 hp.textContent = "+62 812-6694-0418";
 hp.style.cursor = "pointer";
@@ -47,12 +47,12 @@ function mailClick() {
 }
 email.onclick = mailClick;
 
-document.getElementById("sd").textContent =
-  "SD N 03 Koto Baru Simalanggang (2010 - 2016)";
-document.getElementById("smp").textContent =
-  "SMP N 1 Kec. Payakumbuh (2016 - 2019)";
+// document.getElementById("sd").textContent =
+//   "SD N 03 Koto Baru Simalanggang (2010 - 2016)";
+// document.getElementById("smp").textContent =
+//   "SMP N 1 Kec. Payakumbuh (2016 - 2019)";
 document.getElementById("smk").textContent =
-  "SMK N 2 Payakumbuh, Otomasi insdustri Program Jurusan 4 Tahun (2019 - 2023)";
+  "SMK N 2 Payakumbuh, Teknik Otomasi Insdustri Program Jurusan 4 Tahun (2019 - 2023)";
 
 const magang = document.getElementById("magangCaption");
 const sertifikatMagang = "https://drive.google.com/file/d/11WlVQSh5wR1YUnIVS_1WrotQUQnJR2pz/view?usp=drivesdk";
