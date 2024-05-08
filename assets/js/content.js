@@ -58,7 +58,7 @@ const magang = document.getElementById("magangCaption");
 const sertifikatMagang = "https://drive.google.com/file/d/11WlVQSh5wR1YUnIVS_1WrotQUQnJR2pz/view?usp=drivesdk";
 const mouseover = `onmouseover="this.style.textDecoration= 'underline'"`
 const mouseout = `onmouseout="this.style.textDecoration= 'none'"`
-magang.innerHTML = `Magang di PT Semen Padang Bagian otomasi program leader PLC (Programmable Logic Controller) dan sistem kelistrikan dasar serta maintenance selama (6 Bulan) <a href="${sertifikatMagang}" id="sertifikatMagang" target="_blank" style="color:var(--warna-secondary);  text-decoration: none;" ${mouseover} ${mouseout} title="Sertifikat Magang di PT Semen Padang">bersertifikat</a>.`;
+magang.innerHTML = `PKL di PT Semen Padang Bagian PLC (Programmable Logic Controller) dan sistem kelistrikan dasar serta maintenance selama (6 Bulan) <a href="${sertifikatMagang}" id="sertifikatMagang" target="_blank" style="color:var(--warna-secondary);  text-decoration: none;" ${mouseover} ${mouseout} title="Sertifikat Magang di PT Semen Padang">bersertifikat</a>.`;
 
 const mdp1 = document.getElementById("mdp");
 const bdgc2 = document.getElementById("bdgc");
