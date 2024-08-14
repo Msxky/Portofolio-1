@@ -10,7 +10,7 @@ function btnAbout() {
   const containerAboutHidden = document.querySelector(".containerAboutHidden");
   const btnAbout = document.getElementById("btnAbout");
   const promptInput = prompt("Personal Data⚠, Please Enter Secret Key!");
-  const key = "";
+  const key = "0353";
 
   if (promptInput == key) {
     alert("Success✅, Scroll Down⬇")
@@ -56,9 +56,9 @@ document.getElementById("smk").textContent =
 
 const magang = document.getElementById("magangCaption");
 const sertifikatMagang = "https://drive.google.com/file/d/11WlVQSh5wR1YUnIVS_1WrotQUQnJR2pz/view?usp=drivesdk";
-const mouseover = `onmouseover="this.style.textDecoration= 'underline'"`
-const mouseout = `onmouseout="this.style.textDecoration= 'none'"`
-magang.innerHTML = `PKL di PT Semen Padang Bagian PLC (Programmable Logic Controller) dan sistem kelistrikan dasar serta maintenance selama (6 Bulan) <a href="${sertifikatMagang}" id="sertifikatMagang" target="_blank" style="color:var(--warna-secondary);  text-decoration: none;" ${mouseover} ${mouseout} title="Sertifikat Magang di PT Semen Padang">bersertifikat</a>.`;
+const mouseover = `onmouseover="this.style.textDecoration= 'underline'; this.style.fontWeight='bold'; this.style.color='var(--warna-utama)'; this.style.transition='all .2s ease-in-out'"`
+const mouseout = `onmouseout="this.style.fontWeight='normal'"`
+magang.innerHTML = `PKL di PT Semen Padang Bagian PLC (Programmable Logic Controller) dan sistem kelistrikan dasar serta maintenance selama (6 Bulan) <a href="${sertifikatMagang}" id="sertifikatMagang" target="_blank" style="color:var(--warna-secondary)" ${mouseover} ${mouseout} title="Sertifikat Magang di PT Semen Padang">bersertifikat</a>.`;
 
 const mdp1 = document.getElementById("mdp");
 const bdgc2 = document.getElementById("bdgc");
