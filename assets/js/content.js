@@ -66,6 +66,8 @@ const bdmp3 = document.getElementById("bdmp");
 const bdg4 = document.getElementById("bdg");
 const bdvd5 = document.getElementById("bdvd");
 const plp6 = document.getElementById("plp");
+const bdpw7 = document.getElementById("bdpw");
+const bmfw8 = document.getElementById("bmfw");
 
 // mdp
 mdp1.textContent =
@@ -129,6 +131,30 @@ function plp() {
 }
 plp6.onclick = plp;
 
+// bdpw
+bdpw7.textContent =
+  "Belajar Dasar Pemrograman Web (2024)";
+function bdwp() {
+  window.open(
+    "https://drive.google.com/file/d/1vvAWHRQeZQ5Jui6M00pJ1xNH3SO9cYh9/view?usp=drivesdk",
+    "_blank"
+  );
+}
+bdpw7.onclick = bdwp;
+
+// bmfw
+bmfw8.textContent =
+  "Belajar Membuat Front-End Web untuk Pemula (2024)";
+function bmfw() {
+  window.open(
+    "https://drive.google.com/file/d/1w0xEe4elkCl55vjZeht7Vnc9VgCkEWBq/view?usp=drivesdkq",
+    "_blank"
+  );
+}
+bmfw8.onclick = bmfw;
+
+
+// Fungsi untuk tombol send message
 function send() {
   const yName = document.getElementById("yourName");
   const yMail = document.getElementById("yourMail");
