@@ -10,7 +10,7 @@ function btnAbout() {
   const containerAboutHidden = document.querySelector(".containerAboutHidden");
   const btnAbout = document.getElementById("btnAbout");
   const promptInput = prompt("Personal Data⚠, Please Enter Secret Key!");
-  const key = "0353";
+  const key = "";
 
   if (promptInput == key) {
     alert("Success✅, Scroll Down⬇")
