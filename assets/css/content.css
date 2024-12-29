@@ -173,6 +173,8 @@ body::-webkit-scrollbar {
 
 .contentAbout2 p {
   margin-top: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* STYLING BUTTON */
