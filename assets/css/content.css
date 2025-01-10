@@ -138,15 +138,15 @@ body::-webkit-scrollbar {
   /* background: red; */
   top: 100px;
 }
-
 /* END TITLE HEADING */
 
-/* PADDING CONTENT (kecuali 'contentProject) */
-.contentAbout, .contentSkill, .contentOther, .contentContact, .contentFooter {
+/* PADDING CONTENT (kecuali .contentAbout, .contentProject) */
+.contentSkill, .contentOther, .contentContact, .contentFooter {
   padding: 5% 10%;
 }
 
 .contentAbout {
+  padding: 5% 10% 0 10%;
   display: flex;
   justify-content: center;
   gap: 4rem;
@@ -178,7 +178,7 @@ body::-webkit-scrollbar {
 }
 
 /* STYLING BUTTON */
-.contentAbout2 button, .containerSkill .btn a button {
+.contentAbout2 button, .containerSkill .btn a button, .containerProject .btn a button {
   border: 2px solid var(--warna-utama);
   color: var(--warna-secondary);
   box-shadow:
@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
   user-select: none;
 }
 
-.contentAbout2 button:hover, .containerSkill .btn a button:hover {
+.contentAbout2 button:hover, .containerSkill .btn a button:hover, .containerProject .btn a button:hover {
   color: var(--warna-text);
   background: var(--warna-utama);
   scale: 1.1;
@@ -214,6 +214,7 @@ body::-webkit-scrollbar {
 
 .containerAboutHidden {
   display: none;
+  margin-top: 5%;
 }
 
 .containerAboutHidden .aboutHiddenImg {
