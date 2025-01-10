@@ -58,7 +58,7 @@ document.getElementById("tb").textContent = "176 CM";
 
 document.getElementById("bb").textContent = "56 KG";
 
-document.getElementById("alamat").textContent = "Kecamatan Payakumbuh, Kabupaten Lima Puluh Kota, Sumatra Barat.";
+document.getElementById("alamat").textContent = "Komplek Tiban Housing, Tiban Baru, Kec. Sekupang, Kota Batam, Kepulauan Riau.";
 
 const hp = document.getElementById("hp");
 
